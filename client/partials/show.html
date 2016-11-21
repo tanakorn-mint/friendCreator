@@ -1,0 +1,10 @@
+<div ng-controller = 'mainController'>
+	<div>
+		<label>Name:</label>
+		<p>{{ friend.name  }}</p>
+		<label>Birth Date:</label>
+		<p>{{ friend.dob | date: "MMM dd, yyyy" }}</p>
+		<label>User added:</label>
+		<p>{{ friend.created_at | date: "MMM dd, yyyy" }}</p>
+	</div>
+</div>

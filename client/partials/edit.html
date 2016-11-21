@@ -1,0 +1,10 @@
+
+<div ng-controller="editController">
+<form ng-submit="update(editfriend);">
+	<label>Name:</label>
+	<input type="text" placeholder="{{ editfriend.name }}" ng-model="editfriend.name">
+	<label>Date of Birth:</label>
+	<input type="datetime" placeholder="{{ editfriend.dob }}" ng-model="editfriend.dob">
+	<input type="submit" value="Update">
+</form>
+</div>

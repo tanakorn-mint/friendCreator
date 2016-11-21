@@ -1,0 +1,10 @@
+<h1>Creating New Friend!</h1>
+<div ng-controller="newController">
+	<form ng-submit="create(newFriend);">
+		<label>New Friend's Name:</label>
+		<input type="text" ng-model="newFriend.name" min="2" required><br><br>
+		<label>Date of Birth:</label>
+		<input type="date" ng-model="newFriend.dob" min="1960-1-1" max="2001-12-12" required><br><br>
+		<input type="submit" value="Add">
+	</form>
+</div>

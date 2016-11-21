@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- DONT FORGET TO ADD YOUR ANGULAR APP! -->
+<html ng-app ="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Friend Creator</title>
+    <!-- Angular from bower_components, otherwise find the CDN -->
+    <script src="angular/angular.js" charset="utf-8"></script>
+    <script src="angular-route/angular-route.js" charset="utf-8"></script>
+    <!-- End Bower Components -->
+
+    <!-- add all the factory and controlelrs location including app.js   -->
+    <script src="assets/app.js" charset="utf-8"></script>
+    <script src="assets/controllers/editController.js" charset="utf-8"></script>
+    <script src="assets/controllers/newController.js" charset="utf-8"></script>
+    <script src="assets/controllers/mainController.js" charset="utf-8"></script>
+    <script src="assets/factories/friendsFactory.js" charset="utf-8"></script>
+
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Links to your new and edit pages here.  Review Angular Partials if you've forgotten ) -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#/new">New</a></li>
+                    <li class="active"><a href="#/main">Main</a></li>
+                    <!--| <a href="#/edit">Edit</a> --> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div ng-view=""></div>  
+        </div>
+    </section>
+  </body>
+</html>
+
